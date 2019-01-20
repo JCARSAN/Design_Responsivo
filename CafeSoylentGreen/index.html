@@ -5,14 +5,17 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>HTML Tutorial</title>
       <link rel="stylesheet" type="text/css" href="./css/site.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="./css/mobile.css">
    </head> 
    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>   
-   <body>
+   <body ng-app="myApp" ng-controller="myController">
       <header class="topo row"> 
          <div class="row wrapper">   
          <figure class="logo">
              <img src="./imagens/cafe_logo.png" alt="Logo"/>
          </figure>
+         <!--
          <nav class="navbar">
              <ul class="row">
                 <li><a href="#">Link</a></li>
@@ -22,7 +25,56 @@
                 <li><a href="#">Link</a></li>    
              </ul>
          </nav>
-         </div>  
-      </header>   
+         -->
+         </div> 
+      </header> 
+      <div class="fa fa-bars menu-dropdow-mobile" ng-click="mostramenuMobile()">
+         <div class="menu-dropdow-mobile-content" ng-show="menu_mobile">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+         </div>   
+      </div>
+      <!--
+      <a class="fa fa-bars menu-dropdow-mobile" href="#"></a>
+      -->
+      <!--
+      <div class="container row">
+      <main class="row"> 
+         <figure class="img-home">
+            <img src="./imagens/home-image.jpg" alt="Um belo tomate"/>
+         </figure>
+         <section class="row">
+            <article class="icons ingredients">
+               <h3>All Natural Ingredients</h3>
+               <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
+               <p>Lorm ipsum doxlor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
+               <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
+               <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
+            </article>
+            <article class="icons tech">
+               <h3>Technology Meets Good Nutrition</h3>
+               <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
+               <p>Lorm ipsum doxlor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
+               <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
+               <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
+            </article>
+         </section>   
+      </main>
+      <aside>
+         <h1>Teste</h1>
+      </aside>
+      </div>  
+     -->
+     <script>
+        var app = angular.module('myApp', []);
+        app.controller('myController',function($scope){
+           $scope.menu_mobile = false;
+           $scope.mostramenuMobile = function(){
+            $scope.menu_mobile = !$scope.menu_mobile;
+           };
+        });
+     </script>
    </body>
 </html> 
