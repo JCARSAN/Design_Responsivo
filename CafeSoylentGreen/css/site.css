@@ -5,22 +5,56 @@
     list-style: none;
     text-decoration: none;
 }
-.row{
-    display: flex;
-    flex-wrap: wrap;
-}
 .topo{
     border: 1px solid black;
+    /*overflow: hidden;*/
+    height: 8.5em;
+    /*background-image: url("../imagens/bg_banner.jpg");*/
+    background-image: url("../imagens/banner.png");
+    background-repeat: repeat-x;
+    background-position: left top;
 }
-.fakeimage{
-    flex : 40%;
-    border: 1px solid black;
+.logo{
+    float: left;
+    width: 40%;
+    margin-top: 2em;
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
+    height: 8em;
+    background-image: url("../imagens/bg_banner.jpg");
+    background-repeat: no-repeat;
 }
 .navbar{
-    flex: 60%;
-    border: 1px solid black;
+    float: left;
+    width: 60%;
+    /*border: 1px solid black;*/
+}
+.navbar ul{
+    overflow: hidden;
+    height: 2em;
+    margin-top: 3em;
+    margin-left: 12em;
+}
+.navbar li{
+    float: left;
 }
 .navbar a{
     display: block;
-    padding: 0.8em 1em;
+    color: white;
+    text-align: center;
+    padding: 0.5em 1.5em;
+}
+.navbar a:hover{
+    background-color: #111;
+}
+.footer{
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+.col-3{
+    float: left;
+    width: 33.333333%;
 }
