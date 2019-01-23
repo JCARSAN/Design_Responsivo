@@ -94,6 +94,7 @@ main{
     height: auto;
     max-width: 100%;
     border: 5px solid rgb(235,235,235);
+    border-radius: 2.5%;
 }
 .img-home-legend{
     position: absolute;
@@ -103,8 +104,9 @@ main{
 .img-home-legend p{
     background-color: rgba(10,100,10,.5);
     margin-bottom: 5px;
-    font-size: 20px;
-    font-family: 'Libre Baskerville', serif;
+    font-size: 120%;
+    color: rgb(255,255,255);
+    font-family: 'Playfair Display', serif;
     font-weight: 900;
     text-align: center;
 }
@@ -138,4 +140,45 @@ article p{
 }
 .tech{
     background-image: url("../imagens/tech-icon.png");
+}
+.locate-and-open{
+    background-color: rgb(75,100,75);
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+}
+.section-events{
+    margin-top: 20px;
+    padding: 15px 0;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+}
+.section-events h3{
+    padding: 20px 0;
+}
+.event{
+    padding: 10px;
+}
+.event-ico{
+    background-image: url("../imagens/list_dingbat.png");
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+.event strong{
+    color: rgb(230,25,25);
+    font-weight: 900;
+}
+.section-specials h3{
+    padding: 20px 0;   
+}
+.dishes{
+    margin-bottom: 15px;
+}
+.dishes img{
+    border: 5px solid white;
+    max-width: 100%;
+}
+.dishes figcaption{
+    font-size: 70%;
 }
