@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.col-12{
+    width: 100%;
+    float: left;
+}
+
+.topo{
+    background-image: url("../imagens/banner.png");
+    background-repeat: repeat-x;
+    z-index: -1;
+    height: 140px;
+}
+
+.container-principal{
+    width: 100%;
+    max-width: 1000px;
+    border: 1px solid black;
+    height: 300px;
+    margin: auto;
+}
+
+.banner{
+    height: 140px;
+    background-image: url("../imagens/bg_banner.jpg");
+    background-repeat: no-repeat;
+}
