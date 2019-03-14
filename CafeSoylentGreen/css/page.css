@@ -1,0 +1,63 @@
+body{
+    background-image: url('../imagens/bg_page.png');
+}
+.topo{
+    background-image: url("../imagens/banner.png");
+    background-repeat: repeat-x;
+    z-index: -1;
+    height: 140px;
+    position: absolute;
+}
+.banner{
+    height: 140px;
+    background-image: url("../imagens/bg_banner.jpg");
+    background-repeat: no-repeat;
+}
+.logo img{
+    width: 100%;
+    max-width: 434px;
+    height: auto;
+    /*margin: auto;*/
+    display: block;
+    padding-top: 39px; /* (altura do banner - altura da imagem)/2 */
+    margin-left: 7%; /*70px a distância que queremos dividido pela largura maxima do banner 998px */
+
+}
+main{
+    border: 1px solid blue;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    max-width: 624px;
+}
+.img-home{
+    position: relative;
+}
+.img-home img{
+    width: 100%;
+    max-width: 624px; 
+    height: auto;  
+    margin: auto;
+    display: block;
+    border: 5px solid rgb(240,240,240);
+}
+.img-home figcaption{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+main section{
+    display: inline-table;
+    margin-top: 40px;
+}
+.events{
+    border: 1px solid green;
+    height: 500px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+footer{
+    clear: both;
+    margin-top: 10px;
+    border: 1px solid red;
+    height: 200px;
+}
