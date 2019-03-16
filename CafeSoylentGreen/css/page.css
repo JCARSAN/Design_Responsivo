@@ -8,6 +8,42 @@ body{
     height: 140px;
     position: absolute;
 }
+.btn-reservation{
+    position: absolute;
+    top: 10px;
+    left: 56%;
+    padding: 10px;
+    background-color: rgb(100,50,50);
+}
+.btn-reservation:hover{
+    background-color: rgba(0,0,0,.75);
+}
+.btn-reservation a{
+    color: white;
+    text-transform: uppercase;
+}
+.navigation-menu{
+    display: block;
+    position: absolute;
+    /*right: 170px;*/
+    left: 56%;
+    top: 90px;
+}
+.navigation-menu li{
+    display: inline-block;
+    padding: 10px;
+    /*background-color: rgba(153,153,153,.75);*/
+    background-color: rgb(200,200,100);
+    border-radius: 0px 7px 0px 7px;
+}
+.navigation-menu li:hover{
+    /*background-color: rgba(0,0,0,.5);*/
+    background-color : rgba(245,245,245,0.75);
+}
+.navigation-menu a{
+    /*color: rgb(234,225,182);*/
+    color : rgb(75,75,10);
+}
 .banner{
     height: 140px;
     background-image: url("../imagens/bg_banner.jpg");
@@ -20,44 +56,150 @@ body{
     /*margin: auto;*/
     display: block;
     padding-top: 39px; /* (altura do banner - altura da imagem)/2 */
-    margin-left: 7%; /*70px a distância que queremos dividido pela largura maxima do banner 998px */
+    /*margin-left: 7%;*/ /*70px a distância que queremos dividido pela largura maxima do banner 998px */
 
 }
 main{
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
     margin-top: 16px;
     margin-bottom: 16px;
-    max-width: 624px;
+    /*max-width: 624px;*/
 }
 .img-home{
     position: relative;
+    padding-right: 20px;
 }
 .img-home img{
     width: 100%;
-    max-width: 624px; 
+    max-width: 624px;
     height: auto;  
     margin: auto;
     display: block;
-    border: 5px solid rgb(240,240,240);
+    border: 10px solid rgb(245,245,245);
+    /*border-radius: 5%;*/
 }
-.img-home figcaption{
+.img-home-legend{
     position: absolute;
-    top: 8px;
-    right: 16px;
+    top: 16px;
+    right: 46px; /* 16px + 20px do padding-right de .img-home */
+}
+.img-home-legend p{
+    background-color: rgba(10,100,10,.5);
+    margin-bottom: 5px;
+    font-size: 150%;
+    color: rgb(255,255,255);
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    text-align: center;
+    padding: 5px 8px;
 }
 main section{
     display: inline-table;
-    margin-top: 40px;
+    margin-top: 30px;
+}
+.home-text{
+    max-width: 624px;
+    margin-left: 10px;
+}
+main article{
+    padding: 0 20px;
+    font-family: 'Lora', serif;
+    border-left: 1px dotted gray;
+}
+article h3{
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+article p{
+    text-indent: 20px;
+    padding-bottom: 10px;
+}
+.icons{
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+.ingredients{
+    background-image: url("../imagens/ingredient-icon.png");
+}
+.tech{
+    background-image: url("../imagens/tech-icon.png");
 }
 .events{
-    border: 1px solid green;
-    height: 500px;
+    /*border: 1px solid green;*/
     margin-top: 16px;
     margin-bottom: 16px;
 }
+.locate-and-open{
+    background-color: rgba(0,50,0,.9);
+    padding: 15px;
+    /*text-align: center;*/
+    color: white;
+    font-weight: 900;
+    font-size: 14px;
+}
+.events{
+    background-color: rgba(0,150,100,0.1);
+    box-shadow: 3px 3px rgba(0,0,0,.5);
+}
+.section-events{
+    margin-top: 20px;
+    padding: 15px 10px;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+}
+.section-events h3, .section-specials h3{
+    padding: 20px 0;
+    text-align: center;
+    color: rgb(0,50,0);
+    font-size: 20px;
+}
+.event{
+    padding: 10px;
+}
+.event-ico{
+    background-image: url("../imagens/list_dingbat.png");
+    background-repeat: no-repeat;
+    text-indent: 20px;
+}
+.event strong{
+    color: rgb(230,25,25);
+    font-weight: 900;
+}
+.section-specials{
+    padding: 0 20px;
+}
+/*
+.section-specials h3{
+    padding: 20px 0; 
+    text-align: center;  
+}
+*/
+.dishes{
+    margin-bottom: 15px;
+}
+.dishes img{
+    border: 5px solid white;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    opacity : 0.75;
+}
+.dishes img:hover{
+    opacity : 1;
+}
+.dishes figcaption{
+    /*font-size: 70%;*/
+    word-spacing: 7px;
+}
 footer{
-    clear: both;
+    /*clear: both;*/
     margin-top: 10px;
-    border: 1px solid red;
-    height: 200px;
+    background-color: rgba(0,75,0,.75);
+    color: white;
+    font-weight: 900;
+    padding: 20px;
+    border-radius: 25px;
 }

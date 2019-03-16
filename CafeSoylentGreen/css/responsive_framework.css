@@ -2,6 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
 .col-3{
     width: 25%;
@@ -23,7 +25,7 @@
 }
 .container-principal{
     width: 100%;
-    max-width: 1100px;
+    max-width: 1000px;
     /*border: 1px solid black;*/
     margin: auto;
 }
@@ -39,4 +41,10 @@
     display: table;
     content: "";
     clear: both;
+}
+.row{
+    clear: both;
+    display: inline-table;
+    content: "";
+    width: 100%;
 }
