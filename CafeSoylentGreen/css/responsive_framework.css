@@ -23,6 +23,8 @@
 .col-12{
     width: 100%;
 }
+.col-xs-6{}
+.col-xs-12{}
 .container-principal{
     width: 100%;
     max-width: 1000px;
@@ -47,4 +49,8 @@
     display: inline-table;
     content: "";
     width: 100%;
+}
+@media only screen and (max-width: 768px){
+   .col-xs-6{width: 50%; margin: auto; border:none;}  
+   .col-xs-12{width: 100%; border: none;}
 }

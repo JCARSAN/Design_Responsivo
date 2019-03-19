@@ -1,4 +1,4 @@
-body{
+#app{
     background-image: url('../imagens/bg_page.png');
 }
 .topo{
@@ -27,6 +27,7 @@ body{
     position: absolute;
     /*right: 170px;*/
     left: 56%;
+    /*left: 750px;*/
     top: 90px;
 }
 .navigation-menu li{
@@ -43,6 +44,29 @@ body{
 .navigation-menu a{
     /*color: rgb(234,225,182);*/
     color : rgb(75,75,10);
+}
+#menu-dropdow{
+    background-color: rgb(200,200,100);
+    border: 1px solid rgb(75,75,10);
+    cursor: grabbing;
+    display: none;
+}
+#menu-dropdow span{
+    color: rgb(75,75,10);
+    font-weight: 900;
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 5px;
+}
+#menu-dropdown-content{
+    display: none;
+}
+#menu-dropdown-content a{
+    display: block;
+    padding: 15px;
+    border: 1px solid rgb(75,75,10);
+    color: rgb(75,75,10);
+    font-weight: 900;
 }
 .banner{
     height: 140px;
@@ -81,7 +105,8 @@ main{
 .img-home-legend{
     position: absolute;
     top: 16px;
-    right: 46px; /* 16px + 20px do padding-right de .img-home */
+    right: 11%; /* 16px + 20px do padding-right de .img-home */
+    font-size: 80%;
 }
 .img-home-legend p{
     background-color: rgba(10,100,10,.5);
@@ -182,6 +207,7 @@ article p{
 .dishes img{
     border: 5px solid white;
     width: 100%;
+    max-width: 270px;
     height: auto;
     display: block;
     margin: auto;
@@ -192,7 +218,9 @@ article p{
 }
 .dishes figcaption{
     /*font-size: 70%;*/
-    word-spacing: 7px;
+    /*word-spacing: 7px;*/
+    max-width: 270px;
+    margin: auto;
 }
 footer{
     /*clear: both;*/

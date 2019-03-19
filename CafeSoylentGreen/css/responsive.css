@@ -1,0 +1,27 @@
+@media only screen and (max-width: 985px){
+    #menu-dropdow{
+        display: block;
+    }
+    .navigation-menu, .btn-reservation{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .home-text{
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .img-home{
+        padding: 0;
+    }
+    /*
+    .img-home-legend{
+        font-size: 70%;
+        right: 10%;
+    }
+    */
+    .tech{
+        margin-top: 15px;
+    }
+}
