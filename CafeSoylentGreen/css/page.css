@@ -25,9 +25,8 @@
 .navigation-menu{
     display: block;
     position: absolute;
-    /*right: 170px;*/
     left: 56%;
-    /*left: 750px;*/
+    /*left: 60vw;*/
     top: 90px;
 }
 .navigation-menu li{
@@ -164,6 +163,24 @@ article p{
     font-weight: 900;
     font-size: 14px;
 }
+.site-form{
+    background-color: rgba(100,175,100,.75);
+}
+.form-title{
+    color: rgb(0,50,0);
+    margin-bottom: 20px;
+    text-align: center;
+}
+.btn-submit{
+    font-size: 18px;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.75);
+}
+.form-warning{
+    padding-top: 10px;
+    text-align: justify;
+    color: rgb(200,50,50);
+}
 .events{
     background-color: rgba(0,150,100,0.1);
     box-shadow: 3px 3px rgba(0,0,0,.5);
@@ -207,7 +224,7 @@ article p{
 .dishes img{
     border: 5px solid white;
     width: 100%;
-    max-width: 270px;
+    max-width: 400px;
     height: auto;
     display: block;
     margin: auto;
@@ -219,7 +236,7 @@ article p{
 .dishes figcaption{
     /*font-size: 70%;*/
     /*word-spacing: 7px;*/
-    max-width: 270px;
+    max-width: 400px;
     margin: auto;
 }
 footer{

@@ -50,6 +50,32 @@
     content: "";
     width: 100%;
 }
+.form-container{
+    width: 90%;
+    margin: auto;
+    border: 1px solid black;
+    padding: 20px;
+    min-width: 360px;
+}
+.form-container::after{
+    display: table;
+    content: "";
+    clear: both; 
+}
+.field-container{
+    margin: auto;
+    padding-bottom: 15px;
+}
+.form-container input[type=date], select{
+    height: 34px;
+}
+.form-container textarea{
+    height: 100px;
+}
+.form-container label{
+    display: block;
+    padding-bottom: 10px;
+}
 @media only screen and (max-width: 768px){
    .col-xs-6{width: 50%; margin: auto; border:none;}  
    .col-xs-12{width: 100%; border: none;}

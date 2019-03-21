@@ -40,32 +40,86 @@
             </div>
          </div>
          <main class="box col-8 col-xs-12">
-            <figure class="img-home">
-               <img src="./imagens/home-image.jpg" alt="Um belo tomate"/>
-               <figcaption class="img-home-legend">
-                  <p>Resource conscius</p>
-                  <p>haute cuisine</p>
-                  <p>for the 21st Century</p>
-               </figcaption>
-            </figure>
-            <section class="row home-text">
-               <article class="box col-6 col-xs-12 icons ingredients">
-                  <!--<span class="ingredient-icon"></span>-->
-                  <h3>All Natural Ingredients</h3>
-                  <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
-                  <p>Lorm ipsum doxlor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
-                  <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
-                  <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
-               </article>
-               <article class="box col-6 col-xs-12 icons tech">
-                  <!--<span class="tech-icon"></span>-->
-                  <h3>Technology Meets Good Nutrition</h3>
-                  <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
-                  <p>Lorm ipsum doxlor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
-                  <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
-                  <p>Lorm ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat. Ipsum dolor sat ipectum solorgno inferiod. Gorogonzola reggio solor dat.</p>
-               </article>
-            </section>
+            <div class="form-container site-form">
+               <h1 class="form-title">Make a Reservation</h1>
+               <form action="">
+                  <div class="col-9 field-container">
+                     <div class="">
+                        <label for="name">Your Name: </label>
+                     </div>
+                     <div class="col-12">
+                        <input type="name" name="name" id="name" class="col-12">
+                     </div>
+                  </div>
+                  <div class="col-9 field-container">
+                     <div class="">
+                        <label for="email">Your e-mail address: </label>
+                     </div>
+                     <div class="col-12">
+                        <input type="email" name="email" id="email" class="col-12">
+                     </div>
+                  </div> 
+                  <div class="col-9 field-container">
+                     <div class="">
+                        <label for="number_dinners">Number in Party:</label>
+                     </div>
+                     <div class="col-12">
+                        <select class="col-12">
+                           <option value="0">Number of dinners</option>
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                           <option value="6">6</option>
+                           <option value="7">7</option>
+                           <option value="8+">8+</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="col-9 field-container">
+                     <div class="">
+                        <label for="date">Date: </label>
+                     </div>
+                     <div class="col-12">
+                        <input type="date" name="date" id="date" class="col-12">
+                     </div>
+                  </div>  
+                  <div class="col-9 field-container">
+                     <div class="">
+                        <label for="time">Time of Reservation: </label>
+                     </div>
+                     <div class="col-12">
+                        <input type="text" name="time" id="time" class="col-12">
+                     </div>
+                  </div> 
+                  <div class="col-9 field-container">
+                     <div class="">
+                        <label for="location">Location Preference: </label>
+                     </div>
+                     <div class="col-12">
+                        <p><input type="radio" name="location" value="Anywhere is fine" id="" class="" checked="true">Anywhere is fine</p>
+                        <p><input type="radio" name="location" value="At the bar Corner table" id="" class="">At the bar Corner table</p>
+                     </div>
+                  </div>
+                  <div class="col-9 field-container">
+                     <div class="">
+                        <label for="comments"> Any comments or requests?  </label>
+                     </div>
+                     <div class="col-12">
+                        <textarea id="coments" class="col-12"></textarea>
+                     </div>
+                  </div> 
+                  <div class="col-9 field-container">
+                     <div class="col-6 col-xs-12" style="margin:auto">
+                        <input type="submit" value="Make a Reservation" class="col-12 btn-submit">
+                     </div>
+                  </div>
+                  <div class="col-9 form-warning" style="margin:auto">
+                     <p>After making your reservation, we will contact you via e-mail with a confirmation. Please check in at least 5 minutes before your reservation time. We will not hold tables longer than 5 minutes past your scheduled reservation.</p>
+                  </div>                                                
+               </form> 
+            </div>    
          </main>
          <aside class="box events col-4 col-xs-12">
             <section class="locate-and-open">
